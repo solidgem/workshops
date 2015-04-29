@@ -8,16 +8,16 @@
 # Rack/Sinatra
 
 ## Теория
-* rack  (объект с методом call)
+* rack // объект с методом call
 * bundler
 * rspec
 
 ## Шаги
 * создаем файл application.rb
-* прикручиваем bundler
-* ставим rspec
-* пишем тест(get '/')
-* rack приложение HelloWorldApp = ->(env){...}
+* прикручиваем bundler http://bundler.io/bundler_setup.html  // Bundler.require(:default)
+* ставим rspec // group :test
+* пишем тест(get '/') http://www.sinatrarb.com/testing.html
+* rack приложение // HelloWorldApp = ->(env){...}
 * пишем config.ru
 * подключаем thin
 * подключаем sinatra
@@ -29,8 +29,10 @@
 
 ## Теория
 * rails - набор фреймворков
+* active support
 * MVC
-* рассказать про структуру проекта, автолоадинг
+* рассказать про структуру проекта
+* автолоадинг
 
 ## Шаги
 * генерируем рельсовое приложение с rspec, sqlite
