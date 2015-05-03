@@ -67,4 +67,4 @@
 * [rack](http://rack.github.io/)
 * [sinatra](http://www.sinatrarb.com/)
 * [rails](http://rubyonrails.org/)
-
+* [rails getting_started](http://guides.rubyonrails.org/getting_started.html)  // собственнно, это я и буду рассказывать во второй части занятия
