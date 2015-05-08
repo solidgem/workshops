@@ -19,7 +19,6 @@ Configus.build :development do
   env :production do
     email 'production@email.com'
     house 'White House'
-    cool_hash one: 1
     some_proc -> { 1 + 1 }
   end
 
