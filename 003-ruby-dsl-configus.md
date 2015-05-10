@@ -54,7 +54,7 @@ Configus.config.settings.to_h #=> { server: 'cool.serv.com' }
 ## Метапрограммирование
 * http://ruby-doc.org/core-2.1.0/BasicObject.html
 * http://ruby-doc.org/core-2.1.0/BasicObject.html#method-i-method_missing
-* http://ruby-doc.org/core-2.1.0/BasicObject.html#method-i-instance_eval
+* http://ruby-doc.org/core-2.1.0/BasicObject.html#method-i-instance_exec
 * http://ruby-doc.org/core-2.1.0/Object.html#method-i-define_singleton_method
 
 # Интерфейс
