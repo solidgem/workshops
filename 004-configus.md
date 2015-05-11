@@ -41,3 +41,18 @@ Configus.config.email.to_h #=> { server: 'test-server', port: 1234, login: 'logi
 Configus.config.key1.key2.key3.key4 #=> 'value'
 Configus.config.key1.key2.key3.to_h #=> { key4: 'value' }
 ```
+
+# Полезности
+
+## Рекурсивное объединение хэшей
+
+```ruby
+# метод модифицирует target
+def deep_merge(target, source)
+  source.each do |k, v|
+    tv = target[k]
+    target[k] = tv.is_a?(Hash) && v.is_a?(Hash) ? deep_merge(tv, v) : v
+  end
+  target
+end
+```
