@@ -76,7 +76,7 @@ module Configus
   end
 end
 
-#/lib/configus/proxy.rb
+#lib/configus/proxy.rb
 module Configus
   class Proxy < BasicObject
     # some code
