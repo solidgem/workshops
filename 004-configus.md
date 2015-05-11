@@ -29,7 +29,7 @@ Configus.build :development do
   # именованый параметр parent
   env :development, parent: :production do
     email do
-      server 'test-server'
+      server 'test-server' # переопределяем ключ
     end
   end
 end
