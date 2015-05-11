@@ -59,6 +59,7 @@ Configus.config.house.server #=> 'White House'
 # Архитектура
 
 ```ruby
+#lib/configus.rb
 module Configus
   class << self
     def build(env, &block)
@@ -69,6 +70,27 @@ module Configus
       @config
     end
   end
+end
+
+#/lib/configus/proxy.rb
+module Configus
+  class Proxy < BasicObject
+    # some code
+    
+    def method_missing(key, value)
+      # код ниже только для примера
+      
+      # в BasicObject нет метода p, по этому так=)
+      Kernel.p key
+      Kernel.p value
+    end
+  end
+end
+```
+
+```ruby
+Configus::Proxy.new.instance_exec do 
+  some_method "some value" # напечатает на экран :some_method "some value"
 end
 ```
 
