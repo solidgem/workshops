@@ -1,10 +1,11 @@
 # Цель
 Научиться писать DSL, создать gem.
 
-# Домашнее чтение
+# Прочитать перед тем как начать
 
 * http://nashbridges.me/introducing-ruby-oop
 * http://nashbridges.me/procs-and-lambdas
+* http://nashbridges.me/blocks-in-ruby
 
 # Теория
 
@@ -27,29 +28,23 @@ Configus.build :development do
     some_proc -> { 1 + 1 }
   end
 
-  env :development, parent: :production do
+  env :development do
     email 'development@email.com'
-    settings do
-      server 'cool.serv.com'
-    end
   end
 end
 
 Configus.config.email #=> 'development@email.com'
-Configus.config.settings.server #=> 'cool.serv.com'
-Configus.config.settings.to_h #=> { server: 'cool.serv.com' }
+Configus.config.house.server #=> 'White House'
 ```
 
 # Что читать в процессе
 
 ## Создание гема
+* **команда** `bundle gem configus --test=rspec`
 * http://bundler.io/v1.9/bundle_gem.html
 * http://www.smashingmagazine.com/2014/04/08/how-to-build-a-ruby-gem-with-bundler-test-driven-development-travis-ci-and-coveralls-oh-my/
 * http://stackoverflow.com/questions/4398262/setup-rspec-to-test-a-gem-not-rails
 * http://railscasts.com/episodes/245-new-gem-with-bundler
-
-## Ruby syntax
-* http://nashbridges.me/blocks-in-ruby
 
 ## Метапрограммирование
 * http://ruby-doc.org/core-2.1.0/BasicObject.html
@@ -62,8 +57,22 @@ Configus.config.settings.to_h #=> { server: 'cool.serv.com' }
 * Configus.config
 
 # Архитектура
-* `Configus.build` вызывает `Configus::Builder.build`
-* контекст исполнения: `Configus::Proxy < BasicObject` 
+
+```ruby
+module Configus
+  class << self
+    def build(env, &block)
+      @config = Builder.build env, &block
+    end
+    
+    def config
+      @config
+    end
+  end
+end
+```
+
+* контекст исполнения для method_missing: `Configus::Proxy < BasicObject` 
 * `Configus.config` возвращает экземпляр `Configus::Config` 
 
 # Требования
