@@ -33,12 +33,12 @@ Configus.build :development do
   end
 
   env :development do
-    email 'development@email.com'
+    email 'old_login@email.com'
+    email 'development@email.com' # переопределяем ключ
   end
 end
 
 Configus.config.email #=> 'development@email.com'
-Configus.config.house.server #=> 'White House'
 ```
 
 # Что читать в процессе
