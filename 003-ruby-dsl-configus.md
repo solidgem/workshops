@@ -25,6 +25,7 @@
 # Как это выглядит
 
 ```ruby
+# :development показывает, что стоим конфиг для development окружения 
 Configus.build :development do
   env :production do
     email 'production@email.com'
