@@ -22,7 +22,7 @@
 * практика
  * написать простой TODO на jspm, react.js, immutable.js
 
-Диаграмма из доклада Никиты Прокопова
+Диаграмма из [доклада Никиты Прокопова](http://tonsky.me/talks/2015-frontendconf/)
 ![диаграмма @tonsky](http://tonsky.me/talks/2015-frontendconf/0130%20model-model-dom-dom.png)
  
 # Видео 
