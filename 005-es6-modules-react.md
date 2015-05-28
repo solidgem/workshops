@@ -31,6 +31,14 @@
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/szJjsduHBQQ/0.jpg)](http://www.youtube.com/watch?v=szJjsduHBQQ)
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/I7IdS-PbEgI/0.jpg)](http://www.youtube.com/watch?v=I7IdS-PbEgI)
 
-# Готовое
 
-* моя реализация https://github.com/darkleaf/react-immutable-todo
+# Достоинства
+
+* легко тестировать(чистые функции)
+* можно не рендерить целые поддеревья
+* можно рендерить по таймеру, в случае очнь частого изменения данных
+* легко сделать историю изменений
+* можно по таймеру скидывать в бэкенд изменения
+
+
+моя реализация https://github.com/darkleaf/react-immutable-todo
