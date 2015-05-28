@@ -27,6 +27,10 @@
 Диаграмма из доклада Никиты Прокопова
 ![диаграмма @tonsky](http://tonsky.me/talks/2015-frontendconf/0130%20model-model-dom-dom.png)
  
+ [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/NpMnRifyGyw/0.jpg)](http://www.youtube.com/watch?v=NpMnRifyGyw)
+ 
+ 
+ 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/NpMnRifyGyw" frameborder="0" allowfullscreen></iframe>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/szJjsduHBQQ" frameborder="0" allowfullscreen></iframe>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/I7IdS-PbEgI" frameborder="0" allowfullscreen></iframe>
