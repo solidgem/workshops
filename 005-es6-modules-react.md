@@ -15,14 +15,12 @@
 * [функционалное программирование в браузере](http://tonsky.me/talks/2015-frontendconf/)
  * нарисовать диаграмму(из модели получаем DOM, сами переводим модель из одного состояния в другое, бибилиотека применяет изменения в DOM)
  * clojure
- * атомы
+ * атомы [js-atom](https://github.com/cjohansen/js-atom)
  * иммутабельность
  * персистентные структуры данных
  * [immutable.js](https://facebook.github.io/immutable-js/)
-
 * практика
  * написать простой TODO на jspm, react.js, immutable.js
-
 
 Диаграмма из доклада Никиты Прокопова
 ![диаграмма @tonsky](http://tonsky.me/talks/2015-frontendconf/0130%20model-model-dom-dom.png)
@@ -32,3 +30,7 @@
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/NpMnRifyGyw/0.jpg)](http://www.youtube.com/watch?v=NpMnRifyGyw)
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/szJjsduHBQQ/0.jpg)](http://www.youtube.com/watch?v=szJjsduHBQQ)
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/I7IdS-PbEgI/0.jpg)](http://www.youtube.com/watch?v=I7IdS-PbEgI)
+
+# Готовое
+
+* моя реализация https://github.com/darkleaf/react-immutable-todo
