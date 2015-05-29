@@ -30,7 +30,7 @@
 
 1. [Ruby/сортировочная станция](001-ruby-shunting-yard.md)
 2. [Gem, Bundler, Rack, Sinatra, Rails blog](002-rack-and-rails-with-bundler.md)
-3. [DSL, Gem configus](003-ruby-dsl.md)
+3. [DSL, Gem configus](003-ruby-dsl-configus.md)
 4. [усовершенствовать configus](004-configus.md)
 5. [es6, react, jspm, FP](005-es6-modules-react.md)
 
