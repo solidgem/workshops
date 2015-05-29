@@ -33,6 +33,7 @@
   * materialized views
 * [pup-sub](http://www.postgresql.org/docs/9.4/static/sql-notify.html)
 * получение случайной записи [пример](http://habrahabr.ru/post/242999/)
+* можно еще рассказать про рекурсивные запросы
 
 # Заметки
 
